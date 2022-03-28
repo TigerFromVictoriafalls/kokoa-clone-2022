@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/* Component s*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+/* Screens */
+@import "screens/login.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 150vh;
+}
+
+#login-form {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  margin-top: -20px;
+  padding: 15px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.status-bar {
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+  height: 100px;
+  align-items: center;
+  font-size: 30px;
+}
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+form h1 {
+  font-size: 30px;
+}
+
+.color__day {
+  display: flex;
+}
+.color__title {
+  margin: 20px;
+  margin-left: 30px;
+  border-radius: 10px;
+  height: 300px;
+  width: 200px;
+  background-color: #7fffd4;
+}
+
+.color__name {
+  margin: 20px;
+  font-size: 20px;
+}
+.color__opt {
+  display: flex;
+  margin: 30px;
+  margin-top: 80px;
+  font-size: 40px;
+}
+.color__code {
+  font-size: 40px;
+}
+.color__star {
+  margin-top: 20px;
+}
+.color__next {
+  margin-right: 15px;
+}
+.top {
+  font-size: 30px;
+  margin: 30px;
+}
+.steel {
+  display: flex;
+  margin: 20px;
+}
+.color {
+  margin: 10px;
+  height: 300px;
+  width: 150px;
+}
+.color:nth-child(1) {
+  background-color: #d2691e;
+  width: 150px;
+  height: 270px;
+  border-radius: 20px;
+}
+.color:nth-child(2) {
+  background-color: #248f66;
+  width: 150px;
+  height: 270px;
+  border-radius: 20px;
+}
+.color:nth-child(3) {
+  background-color: #8e3232;
+  width: 150px;
+  height: 270px;
+  border-radius: 20px;
+}
+.star {
+  margin: 20px;
+  margin-top: 300px;
+}

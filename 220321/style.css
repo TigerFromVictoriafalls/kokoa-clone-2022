@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  padding-top: 10vh;
+  justify-content: space-evenly;
+  background-color: gainsboro;
+  flex-wrap: wrap;
+  width: 100vh;
+  height: 120vh;
+}
+div {
+  width: 35vh;
+  height: 40vh;
+  border: 1.09vh solid white;
+}
+.inner1 {
+  position: relative;
+  top: 5vh;
+  left: -0.5vh;
+  width: 34vh;
+  height: 6vh;
+  background-color: white;
+  color: black;
+}
+.inner2 {
+  position: relative;
+  top: 5vh;
+  left: -0.5vh;
+  width: 34vh;
+  height: 6vh;
+  background-color: white;
+  color: black;
+}
+body > div:nth-child(2) {
+  background-color: tomato;
+}
+body > div:nth-child(3) {
+  background-color: teal;
+}
+body > div:nth-child(4) {
+  background-color: burlywood;
+}
+body > div:nth-child(5) {
+  background-color: thistle;
+}
+#TT {
+  position: relative;
+  justify-content: center;
+  width: 70vh;
+  height: 10vh;
+  border: 0vh solid white;
+  left: 10vh;
+}

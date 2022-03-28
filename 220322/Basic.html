@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>Home-My 1st website</title>
+    <style>
+      body {
+        padding-top: 85px;
+        background-color: turquoise;
+      }
+      body > div {
+        display: flex;
+        justify-content: center;
+      }
+      .dot {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 30px;
+        animation: bing 1s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+      }
+      #rotate {
+        animation: bing 0.1s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+      }
+      .box {
+        height: 130px;
+        width: 30px;
+        background-color: white;
+        margin: 7px;
+        margin-top: 20vh;
+        animation: zzuk 1s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+      }
+      @keyframes zzuk {
+        0% {
+          transform: scaley(1);
+        }
+        25% {
+          transform: scaley(1.8);
+        }
+        50% {
+          transform: scaley(1);
+        }
+      }
+      @keyframes bing {
+        from {
+          transform: rotateZ(0);
+        }
+        to {
+          transform: rotateZ(180deg);
+        }
+      }
+      #stop {
+        animation: none;
+      }
+      .box:nth-child(2) {
+        animation-delay: 100ms;
+      }
+      .box:nth-child(3) {
+        animation-delay: 200ms;
+      }
+      .box:nth-child(4) {
+        animation-delay: 300ms;
+      }
+      .box:nth-child(5) {
+        animation-delay: 400ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="rotate">
+      <div class="dot"></div>
+      <div class="dot" id="stop"></div>
+      <div class="dot"></div>
+    </div>
+    <div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
